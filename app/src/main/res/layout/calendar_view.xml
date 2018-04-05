@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/calendar_header">
+        
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnPrev"
+            android:src="@drawable/prev_icon"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDate"
+            android:gravity="center_horizontal"
+            android:text="Jun 2018"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btnPrev"
+            android:layout_toLeftOf="@id/btnNext"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnNext"
+            android:src="@drawable/next_icon"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/calendar_week_header"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="星期日"
+            android:gravity="center_horizontal|center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="星期一"
+            android:gravity="center_horizontal|center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="星期二"
+            android:gravity="center_horizontal|center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="星期三"
+            android:gravity="center_horizontal|center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="星期四"
+            android:gravity="center_horizontal|center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="星期五"
+            android:gravity="center_horizontal|center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="星期六"
+            android:gravity="center_horizontal|center_vertical"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/calendar_grid"
+        android:numColumns="7">
+
+    </GridView>
+    
+</LinearLayout>

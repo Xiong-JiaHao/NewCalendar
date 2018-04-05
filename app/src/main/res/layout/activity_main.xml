@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gin.xjh.newcalendar.NewCalendar
+        xmlns:NewCalendarNS="http://schemas.android.com/apk/res/com.gin.xjh.newcalendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/newCalendar"
+        NewCalendarNS:dateFormat="MMMM yyyy"></com.gin.xjh.newcalendar.NewCalendar>
+
+</LinearLayout>
